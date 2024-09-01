@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile E-Store</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- fontawesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- boxicon cdn -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- bootstrap cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <img src="./images/Logo.png" alt="">
+            <div class="searchbar">
+                <input type="text" placeholder="Search">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+            <input type="checkbox" id="check">
+            <label for="check" class="icons">
+            <!-- menu icon -->
+            <i id="menu" class='bx bx-menu'></i>
+            <!-- close icon -->
+            <i id="cancel" class='bx bx-x' ></i>
+        </label>
+            <div class="navigation">
+                <a href="" class="nav-list">Home</a>
+                <a href="" class="nav-list">About</a>
+                <a href="" class="nav-list">Contact Us</a>
+                <a href="" class="nav-list">Blog</a>
+            </div>
+            <div class="nav-icon">
+                <i class="fa-regular fa-heart icons-nav"></i>
+                <i class="fa-solid fa-cart-shopping icons-nav"></i>
+                <i class="fa-regular fa-user icons-nav"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- banner -->
+    <section class="home">
+        <div class="home-content d-flex justify-content-center align-items-center flex-wrap">
+            <div class="titles">
+                <h4>Pro.Beyond.</h4>
+                <h1>Iphone 14 <span>Pro</span></h1>
+                <h5>Created to change everything for the better.For everyone</h5>
+                <button>Shop Now</button>
+            </div>
+            <div class="home-image">
+                <img src="./images/Iphone Image.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- small banner -->
+    <div class="smaller-banner d-flex">
+        <div class="left-banner">
+            <div class="left-content1">
+                <div class="left-image">
+                    <img src="./images/PlayStation.png" alt="">
+                </div>
+                <div class="left-title">
+                    <h1>Playstation 5</h1>
+                    <p>Incredibly powerful CPUs, GPUs, and an SSD with integrated I/O will redefine your PlayStation
+                        experience.</p>
+                </div>
+            </div>
+            <div class="left-content2">
+                <div class="content2-left">
+                    <div class="content2-img1">
+                        <img width="89px" src="./images/headphone.png" alt="">
+                    </div>
+                    <div class="content-title1">
+                        <h1>Apple <br> AirPods <span>Max</span></h1>
+                        <p>Computational audio.Listen, it's powerful</p>
+                    </div>
+                </div>
+                <div class="content2-right">
+                    <div class="content2-img2">
+                        <img width="130.24px" src="./images/vision.png" alt="">
+                    </div>
+                    <div class="content-title2">
+                        <h1>Apple <br> Vision <span>Pro</span></h1>
+                        <p>An immersive way to experience entertainment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right-banner">
+            <div class="right-content">
+                <h1>Macbook <br> <span>Air</span></h1>
+                <p>The new 15‑inch MacBook Air makes room for more of what you love with a spacious Liquid Retina
+                    display.</p>
+                <button>Shop Now</button>
+            </div>
+            <div class="right-img">
+                <img src="./images/MacBook Pro 14.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- category -->
+    <div class="category p-5">
+        <div class="head-category">
+            <h1>Browse By Category</h1>
+            <div class="arrow-icon">
+                <i class="fa-solid fa-angle-left arrow"></i>
+                <i class="fa-solid fa-angle-right arrow"></i>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-3 pt-4 category-content">
+            <div class="card" style="width: 160px; height: 128px; background: #EDEDED; border: none;">
+                <div class="card-body text-center">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-mobile-screen "></i>
+                    </div>
+                    <h5 class="card-title category-name">Phones</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 160px; height: 128px; background: #EDEDED; border: none;">
+                <div class="card-body text-center">
+                    <div class="category-icon">
+                        <i class='bx bxs-watch'></i>
+                    </div>
+                    <h5 class="card-title category-name">Smart Watches</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 160px; height: 128px; background: #EDEDED; border: none;">
+                <div class="card-body text-center">
+                    <div class="category-icon">
+                        <i class='bx bx-camera'></i>
+                    </div>
+                    <h5 class="card-title category-name">Cameras</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 160px; height: 128px; background: #EDEDED; border: none;">
+                <div class="card-body text-center">
+                    <div class="category-icon">
+                        <i class='bx bx-headphone'></i>
+                    </div>
+                    <h5 class="card-title category-name">Headphones</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 160px; height: 128px; background: #EDEDED; border: none;">
+                <div class="card-body text-center">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-computer"></i>
+                    </div>
+                    <h5 class="card-title category-name">Computers</h5>
+                </div>
+            </div>
+            <div class="card" style="width: 160px; height: 128px; background: #EDEDED; border: none;">
+                <div class="card-body text-center">
+                    <div class="category-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h5 class="card-title category-name">Gaming</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular -->
+    <div class="popular-products d-flex justify-content-center align-items-center flex-wrap">
+        <div class="card product-content" style="width: 336.25px; height: 640px;">
+            <div class="popular-img">
+                <img src="./images/popular.png" class="card-img-top" alt="...">
+            </div>
+            <div class="product-details">
+                <h5 class="">Popular Products</h5>
+                <p class="">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking
+                    and ease of use.</p>
+                <button class="btn" style="border: solid 1px; background: white; color: black;">Shop Now</button>
+            </div>
+        </div>
+        <div class="card product-content" style="width: 336.25px; height: 640px;">
+            <div class="popular-img">
+                <img src="./images/image 64.png" class="card-img-top" alt="...">
+            </div>
+            <div class="product-details">
+                <h5 class="">Ipad Pro</h5>
+                <p class="">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking
+                    and ease of use.</p>
+                <button class="btn" style="border: solid 1px; background: white; color: black;">Shop Now</button>
+            </div>
+        </div>
+        <div class="card product-content" style="width: 336.25px; height: 640px;">
+            <div class="popular-img">
+                <img src="./images/image 41.png" class="card-img-top" alt="...">
+            </div>
+            <div class="product-details">
+                <h5 class="">Samsung Galaxy</h5>
+                <p class="">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking
+                    and ease of use.</p>
+                <button class="btn" style="border: solid 1px; background: white; color: black;">Shop Now</button>
+            </div>
+        </div>
+        <div class="card product-content" style="width: 336.25px; height: 640px; background: #2C2C2C;">
+            <div class="popular-img">
+                <img src="./images/Macbook 1.png" class="card-img-top" alt="...">
+            </div>
+            <div class="product-details">
+                <h5 class="text-light">Macbook Pro</h5>
+                <p class="">iPad combines a magnificent 10.2-inch Retina display, incredible performance, multitasking
+                    and ease of use.</p>
+                <button class="btn" style="border: solid 1px; background: #2C2C2C; color: white; ">Shop Now</button>
+            </div>
+        </div>
+    </div>
+    <!-- products -->
+    <section class="products p-5">
+        <div class="tags d-flex gap-5">
+            <a href="" class="text-dark">
+                <h5>New Arrival</h5>
+            </a>
+            <h5>Bestseller</h5>
+            <h5>Featured Products</h5>
+        </div>
+        <div class="product_grid d-flex justify-content-center align-items-center flex-wrap gap-3 mt-3">
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/Iphone 14 pro 1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple iPhone 14 Pro Max 128GB Deep Purple </h5>
+                    <h4 class="card-text text-center">$900</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/camera.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Blackmagic Pocket Cinema Camera 6k</h5>
+                    <h4 class="card-text text-center">$2535</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/iwatch.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple Watch Series 9 GPS Starlight Aluminium</h5>
+                    <h4 class="card-text text-center">$399</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/headphone1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">AirPods Max Silver Starlight Aluminium</h5>
+                    <h4 class="card-text text-center">$549</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/watch2.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Samsung Galaxy Watch6 Classic 47mm Black</h5>
+                    <h4 class="card-text text-center">$369</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-solid fa-heart" id="like-icon"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/galaxy.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Galaxy Z Fold5 Unlocked | 256GB | Phantom Black</h5>
+                    <h4 class="card-text text-center">$1799</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/airbuds.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Galaxy Buds FE <br> Graphite</h5>
+                    <h4 class="card-text text-center">$99.99</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/ipad.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple iPad 9 10.2" 64GB Wi-Fi Silver (MK2L3) 2021</h5>
+                    <h4 class="card-text text-center">$398</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- discount -->
+    <div class="discounts">
+        <div class="discount-title">
+            <h3>Discounts up to -50%</h3>
+        </div>
+        <div class="discount-list d-flex justify-content-center align-items-center flex-wrap gap-3 mt-3">
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/Iphone.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple iPhone 14 Pro 512GB Gold (MQ233)</h5>
+                    <h4 class="card-text text-center">$1437</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/headphone1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">AirPods Max Silver Starlight Aluminium</h5>
+                    <h4 class="card-text text-center">$549</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/iwatch.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple Watch Series 9 GPS Starlight Aluminium</h5>
+                    <h4 class="card-text text-center">$399</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card product-content" style="width: 252.75px; height: 432px;">
+                <div class="fav-icon">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="product-img">
+                    <img height="160px" src="./images/Iphone1.png" class="card-img-top" alt="...">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title text-center">Apple iPhone 14 Pro 1TB Gold (MQ2V3)</h5>
+                    <h4 class="card-text text-center">$1499</h4>
+                    <div class="text-center">
+                        <button class="btn bg-black text-light">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner 2 -->
+    <div class="banner-2">
+        <img width="100%" height="100%" src="./images/Banner 2.png" alt="">
+        <div class="banner2-content">
+            <div class="content-part">
+                <h1 class="text-center text-light">Big Summer<span> Sale</span></h1>
+                <p class="text-center text-light">Commodo fames vitae vitae leo mauris in. Eu consequat.</p>
+                <div class="text-center">
+                    <button class="btn text-light">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="p-5">
+        <div class="footer-info d-flex">
+            <div class="logo-text">
+                <h1 class="mb-4">Cyber</h1>
+                <p>We are a residential interior design firm located in Portland. Our boutique-studio offers more than
+                </p>
+            </div>
+
+            <div class="footer-content">
+                <h4 class="mb-4">Services</h4>
+                <h5>Bonus program</h5>
+                <h5>Gift cards</h5>
+                <h5>Credit and payment</h5>
+                <h5>Service contracts</h5>
+                <h5>Non-cash account</h5>
+                <h5>Payment</h5>
+            </div>
+            <div class="footer-content">
+                <h4 class="mb-4">Assistance to the buyer</h4>
+                <h5>Find an order</h5>
+                <h5>Terms of delivery</h5>
+                <h5>Exchange and return of goods</h5>
+                <h5>Guarantee</h5>
+                <h5>Frequently asked questions</h5>
+                <h5>Terms of use of the site</h5>
+            </div>
+        </div>
+
+        <div class="footer-icons">
+
+        </div>
+    </footer>
+</body>
+<!-- bootstrap js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
